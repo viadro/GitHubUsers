@@ -26,7 +26,7 @@ class UsersRepositoryImpl(
     }
 
     private fun fetchUsers(lastUserId: Int?): Single<List<User>> {
-        return gitHubApi.getUsers(100)
+        return gitHubApi.getUsers(lastUserId)
             .toObservable()
             .flatMapIterable { it }
             .flatMap { user ->
