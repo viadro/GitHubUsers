@@ -1,5 +1,6 @@
 package com.seweryn.githubusers.ui.users
 
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -77,6 +78,8 @@ class UsersRecyclerAdapter : RecyclerView.Adapter<UsersRecyclerAdapter.ViewHolde
                         TextView(itemView.context).apply {
                             text = it.name
                             textSize = 15f
+                            layoutParams = ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
+                            gravity = Gravity.CENTER_HORIZONTAL
                         })
                 }
             }
