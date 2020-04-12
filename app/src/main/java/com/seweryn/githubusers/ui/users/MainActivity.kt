@@ -52,7 +52,8 @@ class MainActivity : BaseActivity<UsersViewModel>() {
 
     private fun observeProgress() {
         viewModel.progress.observe(this, Observer {
-            progress_bar.showConditionally(it)
+            //progress_bar.showConditionally(it)
+            adapter.seLoading(it)
         })
     }
 
