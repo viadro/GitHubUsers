@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GithubUsers</string>
+    <string name="repositories_title">Repositories:</string>
+    <string name="ok">OK</string>
+    <string name="generic_error_message">Something went wrong</string>
+    <string name="search_hint">Search users or repositories</string>
+</resources>

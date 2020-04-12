@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="18dp">
+    <ImageView
+        android:id="@+id/user_avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/user_avatar"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_alignTop="@id/user_avatar"
+        android:layout_alignBottom="@id/user_avatar"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        tools:text="Piotr Seweryn"
+        />
+    <TextView
+        android:id="@+id/repositories_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/user_avatar"
+        android:layout_below="@id/user_name"
+        android:textSize="14sp"
+        android:layout_marginStart="20dp"
+        android:text="@string/repositories_title"
+        android:gravity="center_horizontal"
+        />
+    <LinearLayout
+        android:id="@+id/user_repositories_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/user_avatar"
+        android:layout_below="@id/repositories_title"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        />
+
+
+
+    <View
+        android:id="@+id/content_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/user_repositories_container"
+        android:background="@android:color/darker_gray"/>
+</RelativeLayout>
